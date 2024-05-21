@@ -16,8 +16,9 @@ class SettingsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: const Text('Settings Apps'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -42,7 +43,7 @@ class SettingsView extends StatelessWidget {
             DropdownMenuItem(
               value: ThemeMode.dark,
               child: Text('Dark Theme'),
-            )
+            ),
           ],
         ),
       ),
